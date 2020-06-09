@@ -6,12 +6,12 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: transparent;
 }
 
 /* Handle */
@@ -21,7 +21,7 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #666;
 }
 
 body{
@@ -58,6 +58,7 @@ body{
     font-size: 1.5rem;
     color: #CCC;
     overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .output{
@@ -68,6 +69,7 @@ body{
     padding-top: 5px;
     font-size: 2.5rem;
     overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .keyboard{
