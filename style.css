@@ -2,9 +2,7 @@
     font-family: "Sans-Serif";
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
-
 
 body{
     touch-action: manipulation;
@@ -18,39 +16,42 @@ body{
 }
 
 .calculator{
-    width: 600;
-    height: 975;
+    width: 300px;
+    height: 487.5px;
     background-color: #333;
-    border: 5px solid #111;
+    border: 3px solid #111;
     margin: 0 auto;
     position: relative;
-    border-radius: 15px;
+    border-radius: 10px;
     top: 40px;
 }
 
 .result{
-    height: 325px;
+    height: 30%;
 }
 
 .history{
     text-align: right;
-    height: 100px;
-    margin: 0 15px;
-    padding-top: 50px;
-    font-size: 60px;
+    height: 25%;
+    margin: 0 10px;
+    padding-top: 10%;
+    font-size: 1.5rem;
     color: #CCC;
+    overflow-x: scroll;
 }
 
 .output{
     direction: rtl;
     text-align: right;
-    height: 145px;
-    margin: 0 15px;
-    font-size: 100px;
+    height: 40%;
+    margin: 0 10px;
+    padding-top: 5px;
+    font-size: 2.5rem;
+    overflow-x: scroll;
 }
 
 .keyboard{
-    height: 650px;
+    height: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -61,13 +62,12 @@ body{
 .operator,
 .number,
 .empty{
-    height: 120px;
-    width: 120px;
+    height: 85%;
+    width: 80%;
     border-radius: 50%;
     border-width: 0;
     font-weight: 500;
-    font-size: 55px;
-    
+    font-size: 1.5rem;
     color: #CCC;
     transition: .2s;
 }
@@ -80,7 +80,7 @@ body{
 .number,
 .operator{
     cursor: pointer;
-    border: 2px solid #34abeb;
+    border: 1.5px solid #34abeb;
 }
 
 .operator{
@@ -89,7 +89,9 @@ body{
 
 .operator:active,
 .number:active{
-    font-size: 50px;
+    height: 80%;
+    width: 75%;
+    font-size: 1.35rem;
 }
 
 .operator:focus,
